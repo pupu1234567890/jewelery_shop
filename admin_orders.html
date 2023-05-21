@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\catalog.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+    <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
+    <title>jewellery shop _ catalog</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.instagram.com"><img src="img\instagram.svg" alt=""></a>
+            <a href="https://web.telegram.org"><img src="img\telegram.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+               <!-- <li><a id="menu_main" href="mainpage.html">ГЛАВНАЯ СТРАНИЦА</a></li>  -->
+                <li><a id="menu_basket" href="admin_orders.html" style="font-weight: bold">заказы</a></li>
+                <li><a id="menu_catalog" href="admin_catalog.html" >КАТАЛОГ</a></li> 
+                <li><a id="menu_catalog" href="admin_users_page.html" >пользователи</a></li> 
+                <!-- <li><a id="menu_contact" href="contactpage.html" >КОНТАКТЫ</a></li> -->
+                <!-- <li><a id="menu_about" href="aboutpage.html" >О НАС</a></li> -->
+                <!-- <li><a href="user_profile.html" >ПРОФИЛЬ</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <container class="admin_orders_anchors">
+        <a href="#order_tracking"><img src="img\icontracking.svg" alt=""></a>
+        <a href="#order_delivered"><img src="img\icondelivered.svg" alt=""></a>
+        <a href="#order_accepted"><img src="img\iconaccepted.svg" alt=""></a>
+    </container>
+
+    <!-- тут кнопочка для поднятия наверх -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">Наверх</button>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        // Показать кнопку, когда пользователь прокручивает страницу вниз
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+        });
+        // Плавный скроллинг страницы к началу при клике на кнопку
+        scrollToTopButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+
+    <!-- заказы в пути -->
+    <div class="greenscreen">
+        <h1 id="order_tracking">заказы в пути</h1>
+    </div>
+    <container class="my_orders">
+        <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>09324865</b></h1>
+            <h1><b>3</b> товара</h1>
+            <h1>Сумма к оплате - <b>3600 р</b></h1>
+            <h1>г. Севастополь</h1>
+             </div>
+        </div>
+        </a>
+
+        
+        <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>08948656</b></h1>
+            <h1><b>8</b> товаров</h1>
+            <h1>Сумма к оплате - <b>5500 р</b></h1>
+            <h1>г. Москва</h1>
+             </div>
+        </div>
+        </a>
+    </container>
+
+    <!-- заказы приняты пунктом выдачи -->
+    <div class="greenscreen">
+        <h1 id="order_delivered">заказы приняты пунктом выдачи</h1>
+    </div>
+    <container class="my_orders">
+
+        <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>09324865</b></h1>
+            <h1><b>3</b> товара</h1>
+            <h1>Сумма к оплате - <b>3600 р</b></h1>
+            <h1>г. Севастополь</h1>
+             </div>
+        </div>
+    </a>
+    <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>08948656</b></h1>
+            <h1><b>8</b> товаров</h1>
+            <h1>Сумма к оплате - <b>5500 р</b></h1>
+            <h1>г. Москва</h1>
+             </div>
+        </div>
+        </a>
+    </container>
+
+    <!-- заказы, оплаченные клиентом -->
+    <div class="greenscreen">
+        <h1 id="order_accepted">заказы, оплаченные клиентом</h1>
+    </div>
+    <container class="my_orders">
+
+        <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>09324865</b></h1>
+            <h1><b>3</b> товара</h1>
+            <h1>Сумма к оплате - <b>3600 р</b></h1>
+            <h1>г. Севастополь</h1>
+             </div>
+        </div>
+        </a>
+        <a href="admin_order_page.html">
+        <div class="order_card_background">
+            <div class="order_card_details">
+            <h1>заказ - <b>08948656</b></h1>
+            <h1><b>8</b> товаров</h1>
+            <h1>Сумма к оплате - <b>5500 р</b></h1>
+            <h1>г. Москва</h1>
+             </div>
+        </div>
+        </a>
+    </container>
+    <footer>
+        <h1>наши адреса:</h1>
+        <container>
+            <h2>г.Москва, Ветошный переулок, 9ТЦ «Никольский пассаж», 0 этаж</h2>
+            <h2>г.Москва, ул. Кировоградская, 13а,ТЦ «Columbus», 1 этаж</h2>
+            <h2>г.Санкт-Петербург, Владимирский пр. 19,ТЦ «Владимирский пассаж», 2 этаж, левая галерея</h2>
+        </container>
+    </footer>
+    </body>
+    </html>

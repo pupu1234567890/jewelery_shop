@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\catalog.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+    <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
+    <title>jewellery shop _ catalog</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.instagram.com"><img src="img\instagram.svg" alt=""></a>
+            <a href="https://web.telegram.org"><img src="img\telegram.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+               <li><a id="menu_main" href="mainpage.html">ГЛАВНАЯ СТРАНИЦА</a></li> 
+                <li><a id="menu_basket" href="cart.html" style="font-weight: bold">корзина</a></li>
+                <li><a id="menu_catalog" href="catalog.html" >КАТАЛОГ</a></li> 
+                <li><a id="menu_contact" href="contactpage.html" >КОНТАКТЫ</a></li>
+                <li><a id="menu_about" href="aboutpage.html" >О НАС</a></li>
+                <li><a href="user_profile.html">ПРОФИЛЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="greenscreen">
+        <h1>товары, добавленные вами в корзину</h1>
+    </div>
+
+    <!-- тут кнопочка для поднятия наверх -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">Наверх</button>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        // Показать кнопку, когда пользователь прокручивает страницу вниз
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+        });
+        // Плавный скроллинг страницы к началу при клике на кнопку
+        scrollToTopButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+    
+     <main>
+        <container class="cartproduct">
+            <div class="cart_item">
+                <img src="img\chainimg.svg" alt="">
+                <div class="cart_item_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <h2><b>1200 р</b></h2>
+                </div>
+                <div  class="cart_plus_minus">
+                    <img src="img\minus_cart.svg" title="УВЕЛИЧИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                    <h1>1</h1>
+                    <img src="img\plus_cart.svg" title="УМЕНЬШИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                </div>
+                <img id="trashicon" src="img\trashicon_black.png" title="УДАЛИТЬ ТОВАР ИЗ КОРЗИНЫ">
+            </div>
+
+            <div class="cart_item">
+                <img src="img\chainimg.svg" alt="">
+                <div class="cart_item_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <h2><b>1200 р</b></h2>
+                </div>
+                <div  class="cart_plus_minus">
+                    <img src="img\minus_cart.svg" title="УВЕЛИЧИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                    <h1>1</h1>
+                    <img src="img\plus_cart.svg" title="УМЕНЬШИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                </div>
+                <img id="trashicon" src="img\trashicon_black.png" title="УДАЛИТЬ ТОВАР ИЗ КОРЗИНЫ">
+            </div>
+
+            <div class="cart_item">
+                <img src="img\chainimg.svg" alt="">
+                <div class="cart_item_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <h2><b>1200 р</b></h2>
+                </div>
+                <div  class="cart_plus_minus">
+                    <img src="img\minus_cart.svg" title="УВЕЛИЧИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                    <h1>1</h1>
+                    <img src="img\plus_cart.svg" title="УМЕНЬШИТЬ КОЛИЧЕСТВО ДАННОГО ТОВАРА НА 1">
+                </div>
+                <img id="trashicon" src="img\trashicon_black.png" title="УДАЛИТЬ ТОВАР ИЗ КОРЗИНЫ">
+            </div>
+        </container>
+     </main>   
+     <div class="greyback_main" style="margin-bottom: 95.11px;">
+        <h1>Сумма к оплате: <b>3600 р</b></h1>
+        <button id="modal-btn" class="make_an_order_button" style="align-self: center;" >оформить заказ</button>
+     </div>
+     <!-- <button id="modal-btn">Открыть модальное окно</button> -->
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Мы доставим заказ в пункт выдачи JEWELLERY SHOP в вашем городе. Оплата производится при получении товара клиентом. Как только ваш заказ будет доставлен в пункт выдачи, мы отправим сообщение об этом на вашу почту.</p>
+    <h1>В вашем городе пункт выдачинаходится по адресу: ул. Университетская 33.</h1>
+    <form class="order_form">
+                <input class="inputorderdetails" type="text" placeholder="Промокод*">
+                <div class="order_details">
+                    <h1>Ваш заказ:</h1>
+                    <h2>Количество товаров - 3шт. </h2>
+                    <h2>Сумма к оплате - 3600 р</h2>
+                    <h2>Скидка - 0 р</h2>
+                    <h2>Итог - 3600 р</h2>
+                </div>
+                <div>
+                    <center>
+                    <button class="butcontact" type="submit">ЗАКАЗАТЬ</button>
+                    </center>
+                </div>
+    </form>
+  </div>
+</div>
+<script>
+        // Получаем кнопку, модальное окно и элементы закрытия
+    var modalBtn = document.getElementById("modal-btn");
+    var modal = document.getElementById("modal");
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Открываем модальное окно при нажатии на кнопку
+    modalBtn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // Закрываем модальное окно при нажатии на элемент закрытия
+    closeBtn.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // Закрываем модальное окно при нажатии вне его области
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+
+     <footer>
+        <h1>наши адреса:</h1>
+        <container>
+            <h2>г.Москва, Ветошный переулок, 9ТЦ «Никольский пассаж», 0 этаж</h2>
+            <h2>г.Москва, ул. Кировоградская, 13а,ТЦ «Columbus», 1 этаж</h2>
+            <h2>г.Санкт-Петербург, Владимирский пр. 19,ТЦ «Владимирский пассаж», 2 этаж, левая галерея</h2>
+        </container>
+    </footer>
+</body>
+</html>

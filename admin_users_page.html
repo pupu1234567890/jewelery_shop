@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\catalog.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+    <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
+    <title>jewellery shop _ catalog</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.instagram.com"><img src="img\instagram.svg" alt=""></a>
+            <a href="https://web.telegram.org"><img src="img\telegram.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="menu_basket" href="admin_orders.html" >заказы</a></li>
+                <li><a id="menu_catalog" href="admin_catalog.html" >КАТАЛОГ</a></li> 
+                <li><a id="menu_catalog" href="admin_users_page.html" style="font-weight: bold">пользователи</a></li> 
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- тут кнопочка для поднятия наверх -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">Наверх</button>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        // Показать кнопку, когда пользователь прокручивает страницу вниз
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+        });
+        // Плавный скроллинг страницы к началу при клике на кнопку
+        scrollToTopButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+    
+    <div class="greenscreen">
+        <h1>пользователи сайта</h1>
+    </div>
+
+    <div class="admin_users_block">
+    <table>
+        <thead>
+          <tr>
+            <th>Имя пользователя</th>
+            <th>Email</th>
+            <th>Дата регистрации</th>
+            <th>Город</th>
+            <th>Количество прибретенных товаров</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Александрова Александра Александровна</td>
+                <td>alex_alex_alex@mail.ru</td>
+                <td>03.01.2022</td>
+                <td>Севастополь</td>
+                <td>3 шт.</td>
+              </tr>
+          <tr>
+            <td>Иванов Иван Иванович</td>
+            <td>ivan@mail.com</td>
+            <td>01.01.2022</td>
+            <td>Москва</td>
+            <td>4 шт.</td>
+
+          </tr>
+          <tr>
+            <td>Петров Петр Петрович</td>
+            <td>petr@mail.com</td>
+            <td>02.01.2022</td>
+            <td>Санкт-Петербург</td>
+            <td>1 шт.</td>
+          </tr>
+          <tr>
+            <td>Сидорова Анна Михайловна</td>
+            <td>anna@mail.com</td>
+            <td>03.01.2022</td>
+            <td>Сочи</td>
+            <td>12 шт.</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+      <footer>
+        <h1>наши адреса:</h1>
+        <container>
+            <h2>г.Москва, Ветошный переулок, 9ТЦ «Никольский пассаж», 0 этаж</h2>
+            <h2>г.Москва, ул. Кировоградская, 13а,ТЦ «Columbus», 1 этаж</h2>
+            <h2>г.Санкт-Петербург, Владимирский пр. 19,ТЦ «Владимирский пассаж», 2 этаж, левая галерея</h2>
+        </container>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\catalog.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+    <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
+    <title>jewellery shop _ catalog</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.instagram.com"><img src="img\instagram.svg" alt=""></a>
+            <a href="https://web.telegram.org"><img src="img\telegram.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="menu_basket" href="admin_orders.html" >заказы</a></li>
+                <li><a id="menu_catalog" href="admin_catalog.html" style="font-weight: bold">КАТАЛОГ</a></li> 
+                <li><a id="menu_catalog" href="admin_users_page.html" >пользователи</a></li> 
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="greenscreen">
+        <h1>каталог товаров и количество на складе</h1>
+    </div>
+    <container class="menucactalog">
+        <a href="#new"><img  src="img\newpic.svg" alt=""></a>
+        <container class="col">
+            <container class="horiz">
+                <a href="#rings"><img  src="img\ringspic.svg" alt=""></a>
+                <a href="#earrings"><img  src="img\earringspic.svg" alt=""></a>
+             </container>
+             <container class="horiz">
+                <a href="#chain"><img  src="img\chainpic.svg" alt=""></a>
+                <a href="#bracelets"><img  src="img\braceletpic.svg" alt=""></a> 
+            </container>
+        </container>
+    </container>
+    <div class="greenscreen">
+        <!-- <a href="add_new_item.html"><button class="butcontact">добавить новый товар в каталог</button></a> -->
+        <button id="modal-btn1" class="butcontact">добавить новый товар в каталог</button>
+    </div>
+    <div id="modal1" class="modal1">
+        <div class="modal-content1">
+          <span class="close1">&times;</span>
+            <form class="add_new_item_form">
+                <h1>ДОБАВЛЕНИЕ НОВОГО ТОВАРА</h1>
+            <input  type="text" placeholder="Название товара*">
+            <select >
+                <option value="" disabled selected>Категория товара*</option>
+                <option value="Кольца">Кольца</option>
+                <option value="Браслеты">Браслеты</option>
+                <option value="Ожерелья">Ожерелья</option>
+                <option value="Серьги">Серьги</option>
+                <option value="Новинки">Новинки</option>
+            </select>
+            <input  type="text" placeholder="Описание товара*">
+            <input  type="text" placeholder="Цена*">
+            <input  type="text" placeholder="Количество товара на складе*">
+            <div>
+                <center>
+                <button class="butcontact">ВЫБРАТЬ ФОТО</button>
+                <button class="butcontact">ДОБАВИТЬ ТОВАР</button>
+                </center>
+            </div>
+        </form>
+        </div>
+      </div>
+
+    <script>
+        // Получаем кнопку, модальное окно и элементы закрытия
+    var modalBtn = document.getElementById("modal-btn1");
+    var modal = document.getElementById("modal1");
+    var closeBtn = document.getElementsByClassName("close1")[0];
+
+    // Открываем модальное окно при нажатии на кнопку
+    modalBtn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // Закрываем модальное окно при нажатии на элемент закрытия
+    closeBtn.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // Закрываем модальное окно при нажатии вне его области
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+
+
+    <!-- тут кнопочка для поднятия наверх -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">Наверх</button>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        // Показать кнопку, когда пользователь прокручивает страницу вниз
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+        });
+        // Плавный скроллинг страницы к началу при клике на кнопку
+        scrollToTopButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+
+
+    <!-- кольца -->
+    <div id="rings" class="product">
+        <h1 class="section_name">кольца</h1>
+        <div class="line"></div>
+        <container class="item_block">
+
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <!-- <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a> -->
+                            <button id="modal-btn2">редактировать товар</button>
+                            <button onclick="">удалить товар</button> 
+                        </div>
+                </div>
+            </div>
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\ringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">колечко</h1>
+                    <p>Очень красивое колецко, всем советую</p>
+                    <!-- <div class="add_to_cart"> -->
+                        <h2>1200 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>            
+        </container>
+    </div>
+    <!-- сережки -->
+    <div id="earrings" class="product">
+        <h1 class="section_name">Серьги</h1>
+        <div class="line"></div>
+        <container class="item_block">
+
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>    
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>    
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>    
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>    
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>    
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\earringsimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">сережки</h1>
+                    <p>Очень красивые сережки, всем советую.</p>
+                        <h2>1500 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+        </container>
+    </div>
+    <!-- ОЖЕРЕЛЬЕ     -->
+    <div id="chain" class="product">
+        <h1 class="section_name">цепочки</h1>
+        <div class="line"></div>
+        <container class="item_block">
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\chainimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">цепочка</h1>
+                    <p>Очень красивая цепочка, всем советую.</p>
+                        <h2>1700 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+        </container>
+    </div>
+    <!-- БРАСЛЕТЫ -->
+    <div id="bracelets" class="product">
+        <h1 class="section_name">браслеты</h1>
+        <div class="line"></div>
+        <container class="item_block">
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\braceletimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">браслет</h1>
+                    <p>Очень красивый браслет, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+        </container>
+    </div>
+         <!-- новинки -->
+    <div id="new" class="product">
+        <h1 class="section_name">Новинки</h1>
+        <div class="line"></div>
+        <container class="item_block">
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\newimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">новинка</h1>
+                    <p>Очень красивая новинка, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\newimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">новинка</h1>
+                    <p>Очень красивая новинка, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\newimg.svg" alt="">
+                <div class="admin_catalog_discription">
+                    <h1 name="item_name">новинка</h1>
+                    <p>Очень красивая новинка, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                        <div class="admin_catalog_buttons">
+                            <a href="edit_item_info.html"><button onclick="">редактировать товар</button></a>
+                            <button onclick="">удалить товар</button>    
+                        </div>
+                </div>
+            </div>       
+        </container>
+    </div>
+
+    <div id="modal2" class="modal2">
+        <div class="modal-content2">
+          <span class="close2">&times;</span>
+          <h5>Редактирование информации о товаре</h5>
+          <div class="admin_edit_block">
+            
+            <div class="admin_catalog_itemcardback">
+                <img class="itempic" src="img\newimg.svg" alt="">
+                <div class="admin_catalog_discription" style="margin-bottom: 20px;">
+                    <h1 name="item_name">новинка</h1>
+                    <p>Очень красивая новинка, всем советую.</p>
+                        <h2>2000 р</h2>
+                        <h3>В наличии: 1000 шт.</h3>
+                </div>
+          </div>
+             
+            <form class="add_new_item_form">
+                
+            <input  type="text" placeholder="Название товара*">
+            <select >
+                <option value="" disabled selected>Категория товара*</option>
+                <option value="Кольца">Кольца</option>
+                <option value="Браслеты">Браслеты</option>
+                <option value="Ожерелья">Ожерелья</option>
+                <option value="Серьги">Серьги</option>
+                <option value="Новинки">Новинки</option>
+            </select>
+            <input  type="text" placeholder="Описание товара*">
+            <input  type="text" placeholder="Цена*">
+            <input  type="text" placeholder="Количество товара на складе*">
+            <div>
+                <center>
+                <button class="butcontact">изменить фото</button>
+                <button class="butcontact">сохранить изменения</button>
+                </center>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>  
+    <script>
+    var modalBtn = document.getElementById("modal-btn2");
+    var modal = document.getElementById("modal2");
+    var closeBtn = document.getElementsByClassName("close2")[0];
+
+    modalBtn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+
+
+    <footer>
+        <h1>наши адреса:</h1>
+        <container>
+            <h2>г.Москва, Ветошный переулок, 9ТЦ «Никольский пассаж», 0 этаж</h2>
+            <h2>г.Москва, ул. Кировоградская, 13а,ТЦ «Columbus», 1 этаж</h2>
+            <h2>г.Санкт-Петербург, Владимирский пр. 19,ТЦ «Владимирский пассаж», 2 этаж, левая галерея</h2>
+        </container>
+    </footer>
+</body>
+</html>

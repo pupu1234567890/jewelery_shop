@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\catalog.css">
+    <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+    <link href="https://myfonts.ru/myfonts?fonts=hoefler-text" rel="stylesheet" type="text/css" />
+    <title>jewellery shop _ main</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.instagram.com"><img src="img\instagram.svg" alt=""></a>
+            <a href="https://web.telegram.org"><img src="img\telegram.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+               <li><a id="menu_main" href="mainpage.html" style="font-weight: bold">ГЛАВНАЯ СТРАНИЦА</a></li> 
+                <li><a id="menu_basket" href="cart.html">корзина</a></li>
+                <li><a id="menu_catalog" href="catalog.html">КАТАЛОГ</a></li> 
+                <li><a id="menu_contact" href="contactpage.html" >КОНТАКТЫ</a></li>
+                <li><a id="menu_about" href="aboutpage.html" >О НАС</a></li>
+                <li><a href="user_profile.html">ПРОФИЛЬ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- тут кнопочка для поднятия наверх -->
+    <button id="scrollToTopButton" class="scroll-to-top-button">Наверх</button>
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        // Показать кнопку, когда пользователь прокручивает страницу вниз
+        window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+        });
+        // Плавный скроллинг страницы к началу при клике на кнопку
+        scrollToTopButton.addEventListener('click', () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        });
+    </script>
+<!--  -->
+    <article>
+        <h1>JEWELLERY SHOP</h1>
+        <h2>be  your own inspiration</h2>
+    </article>
+    
+    <container class="inf_about_brand_main">
+        <div class="back_main">
+            <div >
+            <h1>О бренде</h1>
+            <p>JEWERLY shop – интернет-магазин стильных украшений с шоурумами в Москве и Санкт-Петербурге.<br><br>
+
+                Мы начали работать в 2016 году и из маленького инстаграм-магазинчика превратились в узнаваемый и любимый многими магазин украшений с самым широким ассортиментом и демократичными ценами.<br><br>
+                
+                За 5 лет работы мы ни разу не поступились своим принципом: главное для нас, чтобы купленное у нас украшение принесло радость обладательнице. Мы очень чутко относимся к каждому клиенту, ведь покупка украшения –это важный и ответственный момент. Такой маленький атрибут играет огромную роль в восприятии образа в целом, а главное влияет на самоощущение обладательницы.</p>
+            <h1>Наши преимущества</h1>
+            <p>- самый большой ассортимент – вы сможете подобрать украшение к любому образу<br><br>
+
+                - честная цена – мода должна быть доступной. Мы стараемся держать самые демократичные цены в нашем сегменте<br><br>
+                
+                - сервис - мы всегда рядом: проконсультируем, подберём комплект для любого события в вашей жизни, оперативно доставим заказ<br><br>
+                
+                - бесплатная доставка при покупке трёх изделий<br><br>
+                
+                - доставка с примеркой по Москве и Санкт-Петербургу – для того, чтобы посмотреть все изделия вживую и примерить, не обязательно приезжать в шоурум</p>
+            <h1>У нас вы всегда сможете найти украшение себе по душе и подчеркнуть свою индивидуальность!</h1>
+        </div>    
+        </div>
+        <img src="img\girl.svg" alt="">
+    </container>
+
+    <container id="pluses_main">   
+        <div class="greyback_main">
+        <div class="plus_pic">
+            <img src="img\cost1.svg" alt="" >
+            <img src="img\service1.svg" alt="">
+            <img src="img\items1.svg"  alt="">
+        </div>
+        </div>
+    </container>
+
+    <main class="pop_items">
+
+        <div id="pop_items" class="product">
+            <h1 class="section_name">ПОПУЛЯРНЫЕ ТОВАРЫ</h1>
+            <div class="line"></div>
+            <container class="item_block">
+    
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_1.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_2.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_3.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_4.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_5.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemcardback">
+                    <img class="itempic" src="img\pop_item_6.svg" alt="">
+                    <div id="discription">
+                        <h1 name="item_name">колечко</h1>
+                        <p>Очень красивое колецко, всем советую</p>
+                        <div class="add_to_cart">
+                            <h2>1200 р</h2>
+                            <button onclick="alert('Товар добавлен в корзину!')">в корзину</button>
+                        </div>
+                    </div>
+                </div>               
+            </container>
+            <div class="line"></div>
+        </div>
+    </main>
+
+    <container id="boxes">
+        <img src="img\leftbox.svg" alt="" style="float:left">
+        <img src="img\rightbox.svg" style="float:right" alt="">
+        <div id="greyback">
+            <h1>Бесплатная доставка и отправка при покупке 3-х изделий</h1>
+        </div>
+    </container>
+    <footer>
+        <h1>наши адреса:</h1>
+        <container>
+            <h2>г.Москва, Ветошный переулок, 9ТЦ «Никольский пассаж», 0 этаж</h2>
+            <h2>г.Москва, ул. Кировоградская, 13а,ТЦ «Columbus», 1 этаж</h2>
+            <h2>г.Санкт-Петербург, Владимирский пр. 19,ТЦ «Владимирский пассаж», 2 этаж, левая галерея</h2>
+        </container>
+    </footer>
+</body>
+</html>

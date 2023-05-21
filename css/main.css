@@ -1,0 +1,725 @@
+body{
+    /* display:flex; */
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    /* display:contents; */
+}
+.inst{
+    position: absolute;
+width: 103px;
+height: 96px;
+left: 89px;
+top: 69px;
+
+filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+height: 96px;
+width: 103px;
+left: 89px;
+top: 69px;
+border-radius: [object Object]px;
+
+}
+.tel{
+    position: absolute;
+width: 105px;
+height: 96px;
+left: 211px;
+top: 68px;
+
+filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+
+height: 96px;
+width: 105px;
+left: 211px;
+top: 68px;
+border-radius: [object Object]px;
+
+}
+/* .navig{
+    font-family: Avenir Next Cyr;
+font-size: 20px;
+font-weight: 300;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+
+color: #000000;
+
+} */
+
+        /* a:hover{
+        color:#000000;
+        }  */
+
+.navig{
+    position: absolute;
+/* width: 767px;
+height: 33px;
+left: 583px;
+top: 100px; */
+}
+
+
+#menu_main{
+    position: absolute;
+width: 220px;
+height: 33px;
+right: 637px;
+top: 100px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+text-transform: uppercase;
+
+color: #000000;
+}
+#menu_basket{
+    position: absolute;
+    width: 105px;
+    height: 33px;
+    right: 492px;
+    top: 100px;
+
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+#menu_catalog{
+    position: absolute;
+    width: 107px;
+    height: 33px;
+    right: 344px;
+    top: 100px;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+#menu_contact{
+    position: absolute;
+    width: 128px;
+    height: 33px;
+    right: 181px;
+    top: 100px;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+#menu_about{
+    position: absolute;
+    width: 69px;
+    height: 33px;
+    right: 90px;
+    top: 100px;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+}
+
+/* h1{
+    font-family: 'Hoefler Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 115%;
+    /* or 46px */
+    
+    /* display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.025em;
+    
+    color: #000000; 
+} */
+
+#jewsh{
+    position: absolute;
+width: 410px;
+height: 63px;
+left: calc(50% - 410px/2 - 7px);
+top: 233px;
+
+font-family: 'Hoefler Text';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 115%;
+/* or 46px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.025em;
+
+color: #000000;
+
+
+}
+#under_jewsh{
+    position: absolute;
+    width: 277px;
+    height: 24px;
+    left: calc(50% - 277px/2 - 26.5px);
+    top: 296px;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.22em;
+    
+    color: #000000;
+}
+#greenback{
+    position: absolute;
+    width: 653px;
+    height: 824px;
+    left: 3px;
+    top: 388px;
+    
+    background: #C7CDC2;
+}
+#gr1{
+    position: absolute;
+width: 95px;
+height: 23px;
+left: 98px;
+top: 460px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+
+}
+#gr2{
+    position: absolute;
+width: 466px;
+height: 205px;
+left: 97px;
+top: 509px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+}
+#gr3{
+    position: absolute;
+width: 146px;
+height: 21px;
+left: 98px;
+top: 757px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+}
+#gr4{
+    position: absolute;
+width: 466px;
+height: 239px;
+left: 97px;
+top: 807px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+}
+#gr5{
+    position: absolute;
+width: 522px;
+height: 63px;
+left: 97px;
+top: 1083px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+}
+#f_ph{
+    position: absolute;
+    width: 589px;
+    height: 824px;
+    right: 132px;
+    top: 388px;
+}
+
+#greyrect{
+    position: absolute;
+    top: 1355.23px;
+    left:-1.61px;
+    width:100%;
+    height:144px;
+    background: #ECECEC;
+}
+#cost1{
+    position: absolute;
+    width: 302.88px;
+    height: 203.11px;
+    left: 15%;
+    top: 1330px;
+}
+#service1{
+    position: absolute;
+    width: 249.75px;
+    height: 211.89px;
+    left:43%;
+    top: 1330px;   
+}
+#items1{
+    position: absolute;
+    width: 280.92px;
+    height: 186.79px;
+    right:15%;
+    top: 1330px;     
+}
+#upline{
+    position: absolute;
+    width: 694px;
+    height: 0px;
+    margin-top: 10px;
+    left: calc(50% - 694px/2 + 2px);
+    top: 1777px;
+    border: 0.00000000005px solid #000000;
+}
+#downline{
+    position: absolute;
+width: 694px;
+height: 0px;
+left: calc(50% - 694px/2 + 2px);
+top: 2744px;
+border: 0.00000000005px solid #000000;
+
+}
+#sale{
+    position: absolute;
+    width: 100%;
+    height: 103.96px;
+    left: -1.61px;
+    top: 2948.71px;
+    background: #ECECEC;
+}
+#leftbox{
+    position: absolute;
+    width: 265.86px;
+    height: 376.3px;
+    left: 21.25px;
+    top: 2733.47px;
+}
+#rightbox{
+    position: absolute;
+    width: 273.18px;
+    height: 363.75px;
+    right: 2.65px;
+    top: 2753.76px;
+}
+#saletext{
+    position: absolute;
+    width: 674px;
+    height: 35px;
+    left: calc(50% - 674px/2 - 11px);
+    top: 2970px;
+    
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    font-variant: small-caps;
+    
+    color: #000000;
+}
+#fgrb{
+    position: absolute;
+    width: 100%;
+    height: 251px;
+    left: 0px;
+    background: #C7CDC2;
+}
+#fh1{
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.footp{
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+#footcontacts{
+    position: relative;
+    width: 1507px;
+    height: 36.03px;
+    left: 0px;
+    top: 3241.97px;
+}
+#aboutright{
+    position: absolute;
+    width: 343px;
+    height: 343px;
+    right: 60px;
+    top: 227px;
+}
+#aboutleft{
+    position: absolute;
+    width: 515px;
+    height: 649px;
+    left: 60px;
+    top: 319px;    
+}
+
+#abouttext{
+    position: absolute;
+    width: 711px;
+    height: 318.41px;
+    left: calc(50% - 711px/2 + 77.5px);
+    top: 523px;
+}
+
+/* #block1{
+    position: absolute;
+    width: 100%;
+    height: 741px;
+    left: calc(50% - 1320px/2);
+    top: 227px;
+
+} */
+#advabout{
+    position: absolute;
+            width: 235px;
+            height: 34px;
+            left: 155px;
+            top: 1035px;
+}
+#lozabout{
+    position: absolute;
+    width: 951px;
+    height: 35px;
+    left: 140px;
+    top: 1320px;
+}
+.habout{
+    font-family: 'Avenir Next Cyr';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            font-variant: small-caps;
+            
+            color: #000000;
+}
+
+#pabout{
+    position: absolute;
+width: 704px;
+height: 199px;
+left: 155px;
+top: 1083px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+font-variant: small-caps;
+
+color: #000000;
+}
+.content {
+	flex: 1 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+#mainfooter{
+    position: relative;
+    width: 1440px;
+    height: 251px;
+    left: 0px;
+    top: 3296px;
+}
+#topper{
+    position: absolute;
+    width: 100%;
+    height: 143.7px;
+    left: -1px;
+    top: 212px;
+
+    background: #C7CDC2;
+}
+#contacttopper{
+    position: absolute;
+    width: 629px;
+    height: 60px;
+    left: calc(50% - 629px/2 - 8.5px);
+    top: 225px;
+
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+#hcontact{
+    position: absolute;
+width: 740px;
+height: 182px;
+left: calc(50% - 740px/2 - 168px);
+top: 455px;
+
+font-family: 'Avenir Next Cyr';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+letter-spacing: 0.005em;
+
+color: #000000;
+}
+
+#hcontact a{
+    text-decoration: none;
+color: #000000;}
+   
+    #hcontact a:hover {
+        color: #787d74;
+        }
+
+.header a {
+    text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    /* display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный  */
+    /* line-height: 1; Задаём высоту строки (можно в пикселях) */
+    /* color:#2F73B6;Задаём цвет ссылки */
+
+    }
+    .header a:after {
+        display: block; /*превращаем его в блочный элемент*/
+        content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+        height: 1px; /*задаём высоту линии*/
+        width: 0%; /*задаём начальную ширину элемента (линии)*/
+        background-color: #000000; /*цвет фона элемента*/
+        /* transition: width 0.4s ease-in-out; данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды) */
+        }
+        .header a:hover:after,
+        .header a:focus:after {
+        width: 100%;
+        }
+#contactimage{
+    /* position: absolute;
+    width: 564px;
+    height: 661px;
+    right: 78px;
+    top: 427px; */
+    position: absolute;
+    width: 564px;
+    height: 661px;
+    left: calc(50% - 564px/2 + 360px);
+    top: 427px;
+}
+#contactform{
+    position: absolute;
+    width: 823px;
+    height: 646px;
+    left: calc(50% - 823px/2 - 167.5px);
+    top: 701px;
+    
+    background: #FFFFFF;
+    box-shadow: 4px 4px 39px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 62px;
+    align-items: center;
+    align-content: center;
+}
+#contactform p{
+    position: relative;
+    width: 579px;
+    height: 81px;
+    padding-bottom: 4px;
+    /* left: calc(50% - 579px/2 - 167.5px);  */
+    left:122px;
+    top:40px;
+    /* top: 771px; */
+    /* display:flex;
+    flex-direction:row; */
+
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+}
+.inputcontact{
+
+    position: relative;
+    margin-top: 36px;
+    width: 473px;
+    height: 62px;
+    left: 166px;
+    /* top: +191px; */
+    border:none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px 3px #8E9588;
+    border-radius: 54px;
+}
+/* .inputcontact ::-webkit-input-placeholder{
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-overflow:ellipsis;
+    color: #000000;
+} */
+:placeholder-shown{
+    /* left: 51px; */
+    padding-left: 51px;
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-overflow:ellipsis;
+    color: #000000;
+}
+.butcontact{
+        align-self: center;
+    position: relative;
+    width: 176px;
+    height: 82px;
+    /* left: calc(50% - 176px/2 - 288px);
+    top: 1190px; */
+    margin-top: 40px;
+    /* margin-right: 32px; */
+    margin-inline: 16px;
+    background: #C7CDC2;
+    box-shadow: 0px 4px 14px -3px #000000;
+    border-radius: 54px;
+    border:none;
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.maps{
+    position: absolute;
+    width: 100%;
+    height: 538px;
+    /* left: 182px; */
+    top: 1448px;
+}
+.maps h1{
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* margin-left: 200px; */
+    color: #000000;
+    }
+/* footer{
+    position:absolute ;  
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 100%;
+    height: 226.31px;
+    width: 100%;
+
+
+background: #C7CDC2;
+} */
+input[type="text"]{
+    padding-left: 51px;
+    font-family: 'Avenir Next Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-overflow:ellipsis;
+    color: #000000;
+}
